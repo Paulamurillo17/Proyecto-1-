@@ -9,5 +9,12 @@ package carta;
  * @author Holam
  */
 public class Carta {
-    
+    private String foto;
+    private boolean visible;
+    private boolean encontrada;
+    public Carta(String foto){
+        this.foto = foto;
+        this.visible= false;
+        this.encontrada = false;
+    }
 }
