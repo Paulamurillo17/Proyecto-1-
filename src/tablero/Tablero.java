@@ -26,6 +26,15 @@ public class Tablero {
     public boolean compararCartas(Carta carta1, Carta carta2){
         return carta1.getFoto().equals(carta2.getFoto());
     }
-    
-    
+    public boolean juegoFinalizado(){
+        for (int fila = 0; fila < cartas.length; fila++) {
+            for (int columna =0; fila< cartas.length; fila ++){
+               if (!cartas[fila][columna].isEncontrada()){
+                return false;
+               }  
+            }
+         
+        } 
+        return true;
+    }
 }
