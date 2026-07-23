@@ -4,10 +4,17 @@
  */
 package tablero;
 
+import carta.Carta;
+
 /**
  *
  * @author Holam
  */
 public class Tablero {
+    private Carta[][] cartas;
+    public Tablero(int filas, int columnas){
+        cartas = new Carta[filas][columnas];
+    }
+    
     
 }
