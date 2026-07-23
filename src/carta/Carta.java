@@ -40,5 +40,16 @@ public class Carta {
     public void setEncontrada(boolean encontrada) {
         this.encontrada = encontrada;
     }
-    
+    public void mostrar(){
+        visible = true;
+    }
+    public void ocultar(){
+        if(!encontrada){
+            visible = false;
+        }
+    }
+    public void marcarEncontrada(){
+        encontrada=true;
+        visible=true;
+    }
 }
