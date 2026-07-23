@@ -12,8 +12,19 @@ import carta.Carta;
  */
 public class Tablero {
     private Carta[][] cartas;
-    public Tablero(int filas, int columnas){
-        cartas = new Carta[filas][columnas];
+    private Nivel nivel;
+    public Tablero(Nivel nivel){
+        this.nivel = nivel;
+        cartas = new Carta[nivel.getFilas()][nivel.getcolumnas()];
+    }
+    public Carta obtenerCartas(int fila, int columna){
+        return cartas[fila][columna];
+    }
+    public void asignarCartas(int fila, int columna, Carta carta){
+        cartas[fila][columna]=carta;
+    }
+    public boolean compararCartas(Carta carta1, Carta carta2){
+        return carta1.getFoto().equals(carta2.getFoto());
     }
     
     
