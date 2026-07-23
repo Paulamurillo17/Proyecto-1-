@@ -17,4 +17,28 @@ public class Carta {
         this.visible= false;
         this.encontrada = false;
     }
+    public String getFoto() {
+        return foto;
+    }
+
+    public boolean isVisible() {
+        return visible;
+    }
+
+    public boolean isEncontrada() {
+        return encontrada;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+    public void setVisible(boolean visible) {
+        this.visible = visible;
+    }
+
+    public void setEncontrada(boolean encontrada) {
+        this.encontrada = encontrada;
+    }
+    
 }
